@@ -19,27 +19,35 @@ page 123456713 "Seminar Registration List"
             {
                 field("No.";"No.")
                 {
+                    Caption = 'No.';
                 }
                 field("Starting Date";"Starting Date")
                 {
+                    Caption = 'Staring Date';
                 }
                 field("Seminar No.";"Seminar No.")
                 {
+                    Caption = 'Seminar No.';
                 }
                 field("Seminar Name";"Seminar Name")
                 {
+                    Caption = 'Seminar Name';
                 }
                 field(Status;Status)
                 {
+                    Caption = 'Status';
                 }
                 field(Duration;Duration)
                 {
+                    Caption = 'Duration';
                 }
                 field("Maximum Participants";"Maximum Participants")
                 {
+                    Caption = 'Maximum Participants';
                 }
-                field("Room Code";"Room Code")
+                field("Room Resource No.";"Room Resource No.")
                 {
+                    Caption = 'Room Resource No.';
                 }
             }
         }
