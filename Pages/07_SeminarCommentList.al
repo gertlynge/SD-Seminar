@@ -1,5 +1,5 @@
 page 123456707 "Seminar Comment List"
-// CSD1.00 - 2018-01-01 - D. E. Veloper
+// CSD1.00 - GSL FinDroids
 // Chapter 5 - Lab 2-2
 {
     Caption = 'Seminar Comment List';
