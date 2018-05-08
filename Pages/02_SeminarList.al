@@ -1,8 +1,10 @@
 page 123456702 "Seminar List"
-// CSD1.00 - GSL FinDroids
-// Chapter 5 - Lab 2-6
+// CSD1.00 - 2018-01-01 - D. E. Veloper
+// Chapter 5 - Lab 3-6
+// Chapter 8 - Lab 1-2
+// - Added Action
 {
-    Caption = 'Seminar List';
+    Caption='Seminar List';
     PageType = List;
     SourceTable = Seminar;
     Editable = false;
@@ -17,27 +19,21 @@ page 123456702 "Seminar List"
             {
                 field("No."; "No.")
                 {
-
                 }
                 field(Name; Name)
                 {
-
                 }
-                field("Seminar Duration"; "Seminar Duration")
+                field("Seminar Duration";"Seminar Duration")
                 {
-
                 }
                 field("Seminar Price"; "Seminar Price")
                 {
-
                 }
                 field("Minimum Participants"; "Minimum Participants")
                 {
-
                 }
                 field("Maximum Participants"; "Maximum Participants")
                 {
-
                 }
             }
         }
@@ -50,6 +46,7 @@ page 123456702 "Seminar List"
             {
             }
         }
+
     }
 
     actions
@@ -60,14 +57,13 @@ page 123456702 "Seminar List"
             {
                 action("Co&mments")
                 {
-                    RunObject = page "Seminar Comment Sheet";
-                    RunPageLink = "Table Name" = const (Seminar), "No." = field ("No.");
+                    RunObject=page "Seminar Comment Sheet";
+                    RunPageLink = "Table Name"=const(Seminar),"No."=field("No.");
                     Image = Comment;
                     Promoted = true;
                     PromotedIsBig = true;
                     PromotedOnly = true;
                 }
-
                 // >> Lab 8-2
                 action("Ledger Entries")
                 {
@@ -86,9 +82,10 @@ page 123456702 "Seminar List"
                     Promoted=true;
                     PromotedCategory=Process;
                 }
+                // << Lab 8-2
             }
         }
-
+        // >> Lab 8-2
         area(Processing)
         {
             action("Seminar Registration")
@@ -101,5 +98,6 @@ page 123456702 "Seminar List"
                 PromotedCategory=New;
             }
         }
+        // << Lab 8-2
     }
 }
