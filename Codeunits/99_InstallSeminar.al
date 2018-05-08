@@ -62,11 +62,11 @@ codeunit 123456799 InstallSeminar
 
         SeminarSetup.Modify;
 
-        //SourceCode.Code := 'SEMINAR';
-        //if SourceCode.Insert then;
-        //SourceCodeSetup.get;
-        //SourceCodeSetup.CSD_Seminar := 'SEMINAR';
-        //SourceCodeSetup.modify;
+        SourceCode.Code := 'SEMINAR';
+        if SourceCode.Insert then;
+        SourceCodeSetup.get;
+        SourceCodeSetup.CSD_Seminar := 'SEMINAR';
+        SourceCodeSetup.modify;
      end;
     local procedure CreateSeminar();
     var
