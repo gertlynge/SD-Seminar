@@ -166,7 +166,7 @@ table 123456732 "Seminar Ledger Entry"
         }
         key(key2;"Document No.","Posting Date")
         {
-        }
+        }   
     }
 
     fieldgroups
